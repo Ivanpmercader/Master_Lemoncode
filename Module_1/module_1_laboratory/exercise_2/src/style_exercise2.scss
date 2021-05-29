@@ -1,0 +1,68 @@
+@import "a-theme";
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 80vh;
+    top: 10vh;
+    left: 10vw;
+
+    .box{
+        width: 10rem;
+        height: 8rem;
+        padding: 2rem;
+        box-sizing: border-box;
+        border: 1px solid #c5c5c5;
+        font-family: $primary-font;
+        border-radius: $border-radius;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transition: all .5s ease-in-out;
+
+        &:nth-child(1){
+            background-color: $base-color;
+        }
+        
+        &:nth-child(2){
+            background-color: $important-color;
+            color: white;
+        }
+
+        &:nth-child(3){
+            background-color: $warning-color;
+        }
+        
+        &:nth-child(4){
+            border: none;
+            padding: 0;
+            p{
+                &:nth-child(1){
+                    font-family: $primary-font;
+                }
+
+                &:last-child{
+                    font-family: $secundary-font;
+                }
+            }
+        }
+        &:last-child{
+            font-weight: bold;
+            box-shadow: $box-shadow;
+        }
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}

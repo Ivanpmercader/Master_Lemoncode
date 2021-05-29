@@ -1,0 +1,40 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #016a7b;
+    
+    @media screen and (max-width: 960px){
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .options{
+        flex: 1 0 auto;
+        height: 3rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover{
+            background-color: #2e4858;
+            cursor: pointer;
+        }
+    }
+
+
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 10rem;
+        height: 3rem;
+        text-decoration: none;
+        color: white;
+        
+        &:hover{
+            background-color: #2e4858;
+        }
+    }
+}

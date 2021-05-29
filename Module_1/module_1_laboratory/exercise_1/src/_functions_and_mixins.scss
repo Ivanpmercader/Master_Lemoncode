@@ -1,0 +1,25 @@
+@function calc-percent($value){
+    @return $value*5%;
+}
+
+@mixin fill-boxes($bg-color, $txt-color){
+
+    @for $i from 4 to 0{
+        .darken-#{$i}{
+            background-color: darken($bg-color, calc-percent($i));
+            .color-box-text{
+                color: $txt-color;
+            }
+        }
+    }
+
+    @for $i from 1 through 4{
+        .lighten-#{$i}{
+            background-color: lighten($bg-color, calc-percent($i));
+            .color-box-text{
+                color: $txt-color;
+            }
+        }
+    }
+
+}
