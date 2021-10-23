@@ -1,0 +1,27 @@
+$color: whitesmoke;
+$backgroundColor: cadetblue;
+
+.title {
+    color: $color;
+    background-color: $backgroundColor;
+    text-align: center;
+}
+
+#imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        display: block;
+        width: 200px;
+    }
+}
+
+.envLine {
+    text-align: center;
+    font-weight: bold;
+    span{
+        color: indianred;
+        font-style: italic;
+    }
+}

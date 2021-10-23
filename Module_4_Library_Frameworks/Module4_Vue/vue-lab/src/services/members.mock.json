@@ -1,0 +1,27 @@
+[
+  {
+    "id":1,
+    "login": "Antonio",
+    "avatar_url": "imageAntonio"
+  },
+  {
+    "id":2,
+    "login": "Jose",
+    "avatar_url": "imageJose"
+  },
+  {
+    "id":3,
+    "login": "Helena",
+    "avatar_url": "imageHelena"
+  },
+  {
+    "id":4,
+    "login": "Ana",
+    "avatar_url": "imageAna"
+  },
+  {
+    "id":5,
+    "login": "Jorge",
+    "avatar_url": "imageJorge"
+  }
+]

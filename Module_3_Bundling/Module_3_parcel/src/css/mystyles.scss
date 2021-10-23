@@ -1,0 +1,34 @@
+$white: whitesmoke;
+$backgroundColor: indianRed;
+$backgroundColor2: #ff4c06;
+$size200: 200px;
+
+.title {
+    color: $white;
+    background-color: $backgroundColor;
+    text-align: center;
+}
+%center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgContainer{
+    @extend %center;
+    img {
+        display: block;
+        width: 200px;
+    }
+}
+
+.numberContainer{
+    width: $size200;
+    height: $size200;
+    @extend %center;
+    margin: auto;
+    background-color: $backgroundColor2;
+    border: 5px solid black;
+    font-size: 150px;
+    font-weight: bold;
+}

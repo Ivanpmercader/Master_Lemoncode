@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>{{update ? updateString : addString}}</h1>
+<div mat-dialog-content>
+  <form #memberForm="ngForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput [(ngModel)]="member.name" required name="name" #name="ngModel">
+      <mat-error *ngIf="name.invalid"></mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Species</mat-label>
+      <input matInput [(ngModel)]="member.species" required name="species" #species="ngModel">
+      <mat-error *ngIf="species.invalid"></mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Gender</mat-label>
+      <input matInput [(ngModel)]="member.gender" required name="gender" #gender="ngModel">
+      <mat-error *ngIf="gender.invalid"></mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Image</mat-label>
+      <input matInput [(ngModel)]="member.image" required name="image" #image="ngModel">
+      <mat-error *ngIf="image.invalid"></mat-error>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-flat-button color="warn" (click)="onCancel()" cdkFocusInitial>Cancel</button>
+  <button mat-flat-button color="primary" [disabled]="memberForm.invalid" [mat-dialog-close]="setDataResult()" >{{update ? 'Update' : 'Add'}}</button>
+</div>

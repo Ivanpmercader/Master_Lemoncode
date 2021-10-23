@@ -1,0 +1,1 @@
+export * from './detail-rick-morty-character.container'

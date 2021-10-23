@@ -1,0 +1,22 @@
+<div class="container">
+  <p>CRUD</p>
+  <button mat-flat-button color="primary" (click)="openDialog()">Add</button>
+  <hr/>
+  <div class="crud-container">
+    <div class="rick-morty-container" *ngFor="let member of members">
+      <div class="img-container">
+        <img [src]="member.image" [alt]="member.name">
+      </div>
+      <div class="info-container">
+        <p>id: <span>{{member.id}}</span></p>
+        <p>name: <span>{{member.name}}</span></p>
+        <p>species: <span>{{member.species}}</span></p>
+        <p>gender: <span>{{member.gender}}</span></p>
+      </div>
+      <div class="button-container">
+        <button mat-flat-button color="primary" (click)="deleteMember(member.id)">Delete</button>
+        <button mat-flat-button color="primary" (click)="openDialog(member)">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
