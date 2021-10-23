@@ -1,29 +1,7 @@
-# vue-lab
+## VUE
 
-## Project setup
-```
-npm install
-```
+Routing: Home with list of members and Detail of them.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Use of V-model to search differents companys
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Vuex, use of state to persist information.

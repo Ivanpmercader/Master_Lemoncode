@@ -1,4 +1,4 @@
-## ANGULAR
+## REACT
 
 Routing: 3 pages with home, login and about.
 
